@@ -23,7 +23,7 @@ First create a div in the html:
 
 Then in the javascript:
 
-```html
+```javascript
 $('#shaking_div').shake({dur: 500, drift: 10});
 ```
 
