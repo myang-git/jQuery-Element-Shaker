@@ -24,7 +24,7 @@ First create a div in the html:
 Then in the javascript:
 
 ```html
-$('#shaking_div').shake({dur: 500, drift: 10});</code>
+$('#shaking_div').shake({dur: 500, drift: 10});
 ```
 
 Same approach can be applied to other types of element as well.
