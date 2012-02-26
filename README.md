@@ -7,7 +7,7 @@ Install
 Download the file jquery-element-shaker.js to the location your web app reads javascripts from, for example js, and reference it in your html:
 
 ```html
-<script src="/js/jquery-element-shaker.js">
+<script src="/js/jquery-element-shaker.js"></script>
 ```
 
 How To Use
