@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>jQuery Element Shaker Example</title>
+
+<script src="/js/jquery-1.7.1.min.js"></script>
+<script src="/js/jquery-element-shaker.js"></script>
+
+<script>
+
+	function shakerDidFinish() {
+		alert('done!');
+	}
+
+	function shakeItUp() {
+		$('#shaking_div').shake({dur: 500, drift: 10});
+	}
+</script>
+</head>
+
+<body>
+
+<div id='shaking_div'>Shaking Shaking</div>
+
+<a href='#' onclick='shakeItUp()'>Click To Shake</a>
+
+</body>
+</html>
