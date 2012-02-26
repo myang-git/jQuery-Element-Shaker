@@ -4,7 +4,7 @@
  * Shake an element for specified duration and drift range
  * @param params dur: duration in millisecond, drift: maximum displacement in pixel
  */
-jQuery.fn.shake = function(params) {
+jQuery.fn.shake = function(params, shakerDidFinish) {
 	var dur = ('dur' in params) ? params.dur : 500;
 	var drift = ('drift' in params) ? params.drift : 5;
 	var element = $(this);
@@ -23,6 +23,9 @@ jQuery.fn.shake = function(params) {
 		if(dur<=0) {
 			element.css({left: cssLeft, top: cssTop, position: cssPosition});
 			clearInterval(timer);
+			if(shakerDidFinish!=undefined) {
+				shakerDidFinish();
+			}
 		}
 	};
 	timer = setInterval(v, 10);
