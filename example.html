@@ -15,6 +15,7 @@
 
 	function shakeItUp() {
 		$('#shaking_div').shake({dur: 500, drift: 10});
+		$('#img').shake({dur: 1000, drift: 5}, shakerDidFinish);
 	}
 </script>
 </head>
@@ -22,6 +23,8 @@
 <body>
 
 <div id='shaking_div'>Shaking Shaking</div>
+
+<img id='img' src='http://upload.wikimedia.org/wikipedia/en/5/5c/Spongebob-squarepants.png'/>
 
 <a href='#' onclick='shakeItUp()'>Click To Shake</a>
 
